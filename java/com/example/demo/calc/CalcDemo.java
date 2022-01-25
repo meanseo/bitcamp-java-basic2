@@ -19,7 +19,7 @@ public class CalcDemo {
         System.out.println(CalcApp.CALC_TITLE);
         System.out.println("숫자 1:");
         int num1 = scanner.nextInt();
-        System.out.println("연산 기호:");
+        System.out.println("연산 기호 + - * /:");
         String opcode = scanner.next();
         System.out.println("숫자 2:");
         int num2 = scanner.nextInt();
