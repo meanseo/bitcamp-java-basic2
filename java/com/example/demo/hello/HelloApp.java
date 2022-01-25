@@ -1,5 +1,15 @@
 package com.example.demo.hello;
-
+/**
+ * packageName: com.example.demo.calc
+ * fileName   : HelloApp.java
+ * author     : 최민서
+ * date       : 2022-01-24
+ * desc       : 이름과 나이를 받아서 인삿말을 리턴하는 앱
+ * ================================
+ * DATE        AUTHOR        NOTE
+ * ================================
+ * 2022-01-24   최민서      최초 생성
+ */
 public class HelloApp {
     static String HELLO_TITLE = " hello.com";
     private String name;

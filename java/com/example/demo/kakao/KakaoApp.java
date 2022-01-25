@@ -1,5 +1,15 @@
 package com.example.demo.kakao;
-
+/**
+ * packageName: com.example.demo.calc
+ * fileName   : KakaoApp.java
+ * author     : 최민서
+ * date       : 2022-01-24
+ * desc       : 전화번호와 메세를 받아서 결과를 리턴하는 앱
+ * ================================
+ * DATE        AUTHOR        NOTE
+ * ================================
+ * 2022-01-24   최민서      최초 생성
+ */
 public class KakaoApp {
     static String KAKAO_TITLE = "=== Kakao ===";
     private String telno;

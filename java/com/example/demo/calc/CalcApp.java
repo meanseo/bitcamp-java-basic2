@@ -1,5 +1,15 @@
 package com.example.demo.calc;
-
+/**
+ * packageName: com.example.demo.calc
+ * fileName   : CalcApp.java
+ * author     : 최민서
+ * date       : 2022-01-24
+ * desc       : 숫자 2개와 연산자를 받아서 결과를 리턴하는 앱
+ * ================================
+ * DATE        AUTHOR        NOTE
+ * ================================
+ * 2022-01-24   최민서      최초 생성
+ */
 public class CalcApp {
     static String CALC_TITLE = "계산기";
     private int num1;
