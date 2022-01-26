@@ -22,6 +22,7 @@ public class CalcApp {
         this.opcode = opcode;
         this.num2 = num2;
         int res = 0;
+
         /*
         if(opcode.equals("+")){
             res = num1 + num2;
