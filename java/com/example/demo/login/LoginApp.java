@@ -15,13 +15,17 @@ public class LoginApp {
     private String id;
     private String pw;
     private String name;
+    static String PASSWORD = "abc";
 
     public String login(String id, String pw, String name){
         this.id = id;
         this.pw = pw;
         this.name = name;
-        return String.format("id : %s, pw : %s, name : %s",this.id, this.pw, this.name);
-
+        String res = "";
+        if(pw.equals("abc")){
+            res = String.format(" %s 님의 비번 %s가 맞습니다. 로그인 성공",this.id, this.pw,res);
+        }else
+            res = String.format("%s 님의 ID는 맞고 비번 %s 가 틀립니다. 로그인 실패",this.id, this.pw,res);
+        return res;
     }
-
 }

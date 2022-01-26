@@ -24,12 +24,15 @@ public class CalcApp {
         if(opcode.equals("+")){
             res = num1 + num2;
         }else if(opcode.equals("-")){
-            res = num1 - num2;
+            res = num1 + num2;
         }else if(opcode.equals("*")){
-            res = num1 * num2;
+            res = num1 + num2;
         }else if(opcode.equals("/")){
-            res = num1 / num2;
-        }
-        return String.format(" %d %s %s = %d", this.num1, this.opcode, this.num2, res);
+            res = num1 + num2;
+        }else
+            res = 0;
+        //switch(){}
+        String result  = String.format(" %d %s %s = %d", this.num1, this.opcode, this.num2, res);
+        return result;
     }
 }
