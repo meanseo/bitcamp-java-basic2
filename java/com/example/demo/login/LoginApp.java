@@ -9,6 +9,7 @@ package com.example.demo.login;
  * DATE        AUTHOR        NOTE
  * ================================
  * 2022-01-24   최민서      최초 생성
+ * 2022-01-26   최민서      if 절 추가, 4칙연산 가능하도록 개선
  */
 public class LoginApp {
     static String LOGIN_TITLE = " * Login App * ";
@@ -21,11 +22,12 @@ public class LoginApp {
         this.id = id;
         this.pw = pw;
         this.name = name;
+
         String res = "";
         if(pw.equals("abc")){
             res = String.format(" %s 님의 비번 %s가 맞습니다. 로그인 성공",this.id, this.pw,res);
         }else
-            res = String.format("%s 님의 ID는 맞고 비번 %s 가 틀립니다. 로그인 실패",this.id, this.pw,res);
+            res = String.format(" %s 님의 ID는 맞고 비번 %s가 틀립니다. 로그인 실패",this.id, this.pw,res);
         return res;
     }
 }
