@@ -9,6 +9,9 @@ package com.example.demo.login;
  * DATE        AUTHOR        NOTE
  * ================================
  * 2022-01-24   최민서      최초 생성
+ * 2022-01-26   최민서      if절 추가
+ * 2022-01-26   최민서      switch절 추가
+ * 2022-01-26   최민서      3항 연산식 사용
  */
 public class LoginApp {
     public static String LOGIN_TITLE = " * Login App * ";
@@ -16,7 +19,6 @@ public class LoginApp {
     private String pw;
     private String name;
     static String PASSWORD = "abc";
-
     public String login(String id, String pw, String name){
         this.id = id;
         this.pw = pw;

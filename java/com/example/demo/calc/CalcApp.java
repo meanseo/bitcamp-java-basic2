@@ -33,7 +33,8 @@ public class CalcApp {
         }else if(opcode.equals("/")){
             res = num1 / num2;
         }else
-            res = 0;*/
+            res = 0;
+        */
 
         switch (opcode){
             case "+": res = num1 + num2; break;

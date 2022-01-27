@@ -1,10 +1,8 @@
-package com.example.demo.abc;
-
-import java.util.Scanner;
+package com.example.demo.user;
 
 /**
- * packageName: com.example.demo.abc
- * fileName   : AbcApp
+ * packageName: com.example.demo.user
+ * fileName   : UserApp
  * author     : 최민서
  * date       : 2022-01-26
  * desc       :
@@ -13,8 +11,9 @@ import java.util.Scanner;
  * ================================
  * 2022-01-26     최민서        최초 생성
  */
-public class AbcApp {
-    public String abc(){
-
+public class UserApp {
+    public String getUser(){
+        String user = String.format("");
+        return user;
     }
 }

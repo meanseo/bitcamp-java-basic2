@@ -5,7 +5,7 @@ package com.example.demo.grade;
  * fileName   : GradeApp
  * author     : 최민서
  * date       : 2022-01-26
- * desc       :
+ * desc       : 세 과목의 점수를 받아 총점과 평균을 계산하고 합불 여부를 리턴하는 앱
  * 사용자로부터
  *  이름 [          ]
  *  국어 [          ]
@@ -41,7 +41,7 @@ public class GradeApp {
         this.kor = kor;
         this.eng = eng;
         this.math = math;
-        int total = kor + eng + math;
+        int total = kor + eng +math;
         int avg = total / 3;
         String pass = (avg >= 60) ? "합격" : "불합격";
         String grade = String.format("########## %s ########\n" +
