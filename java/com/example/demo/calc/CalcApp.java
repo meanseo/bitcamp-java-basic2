@@ -12,7 +12,7 @@ package com.example.demo.calc;
  * 2022-01-26   최민서      if 절 추가, 4칙연산 가능하도록 개선
  */
 public class CalcApp {
-    static String CALC_TITLE = "계산기";
+    public static String CALC_TITLE = "계산기";
     private int num1;
     private String opcode;
     private int num2;
