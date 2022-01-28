@@ -1,4 +1,4 @@
-package com.example.demo.kakao;
+package com.example.demo.domain;
 /**
  * packageName: com.example.demo.calc
  * fileName   : KakaoApp.java
@@ -10,8 +10,8 @@ package com.example.demo.kakao;
  * ================================
  * 2022-01-24   최민서      최초 생성
  */
-public class KakaoApp {
-    static String KAKAO_TITLE = "=== Kakao ===";
+public class KakaoDTO {
+    public static String KAKAO_TITLE = "=== Kakao ===";
     private String telno;
     private String message;
 

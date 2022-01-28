@@ -1,4 +1,4 @@
-package com.example.demo.google;
+package com.example.demo.domain;
 
 /**
  * packageName: com.example.demo.google
@@ -15,13 +15,18 @@ package com.example.demo.google;
  * ================================
  * 2022-01-25     최민서        최초 생성
  */
-public class GoogleApp {
+public class GoogleDTO {
     public static String WEB_TITLE = " Google ";
     private String search;
 
-    public String google(String search){
-        this.search = search;
-        String res = String.format(" 검색 결과는 ' %s ' 입니다. ", this.search);
-        return res;
+    public String getSearch(){
+
+        return search;
     }
+
+    public void setSearch(String search){
+
+        this.search = search;
+    }
+
 }

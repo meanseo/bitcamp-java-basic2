@@ -1,4 +1,4 @@
-package com.example.demo.hello;
+package com.example.demo.domain;
 /**
  * packageName: com.example.demo.calc
  * fileName   : HelloApp.java
@@ -10,8 +10,8 @@ package com.example.demo.hello;
  * ================================
  * 2022-01-24   최민서      최초 생성
  */
-public class HelloApp {
-    static String HELLO_TITLE = " hello.com";
+public class HelloDTO {
+    public static String HELLO_TITLE = "hello.com";
     private String name;
     private int age;
 

@@ -1,4 +1,4 @@
-package com.example.demo.bmi;
+package com.example.demo.domain;
 
 /**
  * packageName: com.example.demo.bmi
@@ -15,20 +15,34 @@ package com.example.demo.bmi;
  * ================================
  * 2022-01-25     최민서        최초 생성
  */
-public class BmiApp {
+public class BmiDTO {
     public static String TITLE = "BMI";
     private String name;
     private String hei;
     private String wei;
 
-    public String bmi(String name, String hei, String wei){
-        this.name = name;
-        this.hei = hei;
-        this.wei = wei;
-        String res = "";
-        return res;
+    public String getName(){
+        return name;
     }
 
+    public void setName(String name){
+        this.name = name;
+    }
 
+    public String getHei(){
+        return hei;
+    }
+
+    public void setHei(String hei){
+        this.hei = hei;
+    }
+
+    public String getWei(){
+        return wei;
+    }
+
+    public void setWei(String wei){
+        this.wei = wei;
+    }
 
 }

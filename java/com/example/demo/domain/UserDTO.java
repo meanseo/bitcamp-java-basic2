@@ -1,4 +1,4 @@
-package com.example.demo.user;
+package com.example.demo.domain;
 
 /**
  * packageName: com.example.demo.user
@@ -11,7 +11,7 @@ package com.example.demo.user;
  * ================================
  * 2022-01-26     최민서        최초 생성
  */
-public class UserApp {
+public class UserDTO {
     public String getUser(){
         String user = String.format("");
         return user;

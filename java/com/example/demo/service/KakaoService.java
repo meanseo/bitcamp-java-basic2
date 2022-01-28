@@ -1,4 +1,6 @@
-package com.example.demo.kakao;
+package com.example.demo.service;
+
+import com.example.demo.domain.KakaoDTO;
 
 import java.util.Scanner;
 /**
@@ -12,11 +14,11 @@ import java.util.Scanner;
  * ================================
  * 2022-01-24   최민서      최초 생성
  */
-public class KakaoDemo {
+public class KakaoService {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        KakaoApp kakaoApp = new KakaoApp();
-        System.out.println(KakaoApp.KAKAO_TITLE);
+        KakaoDTO kakaoApp = new KakaoDTO();
+        System.out.println(KakaoDTO.KAKAO_TITLE);
         System.out.println(" Telno :");
         String telno = scanner.next();
         System.out.println(" Message :");

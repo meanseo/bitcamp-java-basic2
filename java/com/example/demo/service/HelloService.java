@@ -1,4 +1,6 @@
-package com.example.demo.hello;
+package com.example.demo.service;
+
+import com.example.demo.domain.HelloDTO;
 
 import java.util.Scanner;
 /**
@@ -12,11 +14,11 @@ import java.util.Scanner;
  * ================================
  * 2022-01-24   최민서      최초 생성
  */
-public class HelloDemo {
+public class HelloService {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        HelloApp helloApp = new HelloApp();
-        System.out.println(HelloApp.HELLO_TITLE);
+        HelloDTO helloApp = new HelloDTO();
+        System.out.println(HelloDTO.HELLO_TITLE);
         System.out.println("이름 :");
         String name = scanner.next();
         System.out.println("나이 :");

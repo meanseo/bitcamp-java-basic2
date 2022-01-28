@@ -1,4 +1,4 @@
-package com.example.demo.naver;
+package com.example.demo.domain;
 
 /**
  * packageName: com.example.demo.naver
@@ -15,7 +15,7 @@ package com.example.demo.naver;
  * ================================
  * 2022-01-25     최민서        최초 생성
  */
-public class NaverApp {
+public class NaverDTO {
     public static String TITLE = " NAVER ";
     private String id;
 
