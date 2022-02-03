@@ -46,6 +46,7 @@ public class DemoController {
             switch (scanner.next()) {
                 case "0" :
                     System.out.println("Exit"); return;
+
                 case "1": res = "BMI";
                     System.out.println(BmiDTO.TITLE + "\n 이름, 키, 몸무게");
                     bmi.setName(scanner.next());
@@ -53,6 +54,7 @@ public class DemoController {
                     bmi.setWei(scanner.next());
                     res = bmiService.getBmi(bmi);
                 break;
+
                 case "2": res = "CAlC";
                     System.out.println(CalcDTO.CALC_TITLE + "\n 숫자1, 연산자, 숫자2 입력");
                     calc.setNum1(scanner.nextInt());
@@ -60,19 +62,22 @@ public class DemoController {
                     calc.setNum2(scanner.nextInt());
                     res = calcService.getCalc(calc);
                 break;
+
                 case "3": res = "GOOGLE";
                     System.out.println(GoogleDTO.WEB_TITLE + "\n 검색어를 입력하세요.");
                     google.setSearch(scanner.next());
                     res = googleService.getGoogle(google);
                 break;
+
                 case "4": res = "GRADE";
-                    System.out.println(GradeDTO.GRADE_TITLE + "\n 이름, 국어, 영어, 수학");
+                    System.out.println(GradeDTO.GRADE_TITLE + "\n 학생수를 입력하세요.");
                     grade.setName(scanner.next());
                     grade.setKor(scanner.nextInt());
                     grade.setEng(scanner.nextInt());
                     grade.setMath(scanner.nextInt());
-                    res = gradeService.getGrade(grade);
+                        res = gradeService.getGrade(grade);
                 break;
+
                 case "5": res = "LOGIN";
                     System.out.println(LoginDTO.LOGIN_TITLE + "\n id, pw, name");
                     login.setId(scanner.next());
@@ -80,6 +85,7 @@ public class DemoController {
                     login.setName(scanner.next());
                     res = loginService.getLogin(login);
                 break;
+
                 default: res = "없는 메뉴 입니다.";
                 break;
             }

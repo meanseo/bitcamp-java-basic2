@@ -19,14 +19,14 @@ public class GradeService {
         int total = grade.getKor() + grade.getEng() + grade.getMath();
         int avg = total / 3;
         String pass = (avg >= 60) ? "합격" : "불합격";
-        return String.format("########## %s ########\n" +
-                        " *  이름: %s\n" +
+        return String.format("########## %s ######## \n" +
+                        " *  이름: %s \n" +
                         " *  > 국어: %d점 \n" +
                         " *  > 영어: %d점 \n" +
-                        " *  > 수학: %d점\n" +
+                        " *  > 수학: %d점 \n" +
                         " *  총점: %d점 \n" +
-                        " *  평균(정수): %d점\n" +
-                        " *  합격여부: %s\n" +
+                        " *  평균(정수): %d점 \n" +
+                        " *  합격여부: %s \n" +
                         " ########################",
                 grade.GRADE_TITLE, grade.getName(), grade.getKor(), grade.getEng(),
                 grade.getMath(),total, avg, pass);

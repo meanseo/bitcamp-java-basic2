@@ -11,7 +11,7 @@ package com.example.demo.domain;
  * 2022-01-24   최민서      최초 생성
  */
 public class HelloDTO {
-    public static String HELLO_TITLE = "hello.com";
+    public static String HELLO_TITLE = " hello.com";
     private String name;
     private int age;
 
