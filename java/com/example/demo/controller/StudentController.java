@@ -30,7 +30,7 @@ public class StudentController {
         GradeDTO grade = new GradeDTO();
         LoginDTO login = new LoginDTO();
         StudentService service = new StudentServiceImpl();
-        
+
         while (true){
             System.out.println("메뉴 선택");
             String menu = "0.EXIT 1.BMI 2.CALC 3.GOOGLE 4.GRADE 5.LOGIN";
@@ -63,7 +63,7 @@ public class StudentController {
                 break;
 
                 case "4": res = "GRADE";
-                    System.out.println(GradeDTO.GRADE_TITLE + "\n 학생수를 입력하세요.");
+                    System.out.println(GradeDTO.GRADE_TITLE + "\n 이름, 국어, 영어, 수학 입력");
                     grade.setName(scanner.next());
                     grade.setKor(scanner.nextInt());
                     grade.setEng(scanner.nextInt());
