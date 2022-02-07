@@ -70,7 +70,7 @@ public class QuizServiceImpl implements QuizService {
             }
         }
         for (int i = 0; i < 5; i++) {
-            System.out.println(oneNames[i] + " ( " + countArr[i] + " )\n");
+            System.out.println(oneNames[i] + " (" + countArr[i] + ")\n");
         }
     }
 }

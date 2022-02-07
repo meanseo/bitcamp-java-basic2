@@ -18,31 +18,30 @@ package com.example.demo.domain;
 public class BmiDTO {
     public static String TITLE = "BMI";
     private String name;
-    private String hei;
-    private String wei;
+    private double hei;
+    private double wei;
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getHei(){
+    public double getHei() {
         return hei;
     }
 
-    public void setHei(String hei){
+    public void setHei(double hei) {
         this.hei = hei;
     }
 
-    public String getWei(){
+    public double getWei() {
         return wei;
     }
 
-    public void setWei(String wei){
+    public void setWei(double wei) {
         this.wei = wei;
     }
-
 }

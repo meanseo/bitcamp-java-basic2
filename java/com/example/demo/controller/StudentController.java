@@ -43,8 +43,8 @@ public class StudentController {
                 case "1": res = "BMI";
                     System.out.println(BmiDTO.TITLE + "\n 이름, 키, 몸무게");
                     bmi.setName(scanner.next());
-                    bmi.setHei(scanner.next());
-                    bmi.setWei(scanner.next());
+                    bmi.setHei(scanner.nextDouble());
+                    bmi.setWei(scanner.nextDouble());
                     res = service.getBmi(bmi);
                 break;
 
