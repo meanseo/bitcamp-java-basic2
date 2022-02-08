@@ -1,5 +1,8 @@
 package com.example.demo.quiz.controller;
 
+import com.example.demo.quiz.sevrice.Feb08Service;
+import com.example.demo.quiz.sevrice.Feb08ServiceImpl;
+
 import java.util.Scanner;
 
 /**
@@ -15,5 +18,7 @@ import java.util.Scanner;
  */
 public class Feb08Controller {
     public void execute(Scanner scanner) {
+        Feb08Service service = new Feb08ServiceImpl();
+
     }
 }
