@@ -11,7 +11,7 @@ package com.example.demo.quiz.sevrice;
  * ================================
  * 2022-02-07     최민서        최초 생성
  */
-public class QuizServiceImpl implements QuizService {
+public class Feb06ServiceImpl implements Feb06Service {
     @Override
     public void quiz1(String[] oneNames) {
         String s = "";

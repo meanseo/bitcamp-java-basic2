@@ -1,7 +1,6 @@
 package com.example.demo.quiz.controller;
 
-import com.example.demo.quiz.sevrice.QuizService;
-import com.example.demo.quiz.sevrice.QuizServiceImpl;
+import com.example.demo.quiz.sevrice.*;
 
 import java.util.Scanner;
 
@@ -18,24 +17,108 @@ import java.util.Scanner;
  */
 public class QuizController {
     public void execute(Scanner scanner) {
-        Feb06Controller feb06Controller = new Feb06Controller();
-        Feb07Controller feb07Controller = new Feb07Controller();
-        Feb08Controller feb08Controller = new Feb08Controller();
-        while (true){
-            System.out.println("0)EXIT 1)2월6일 2)2월7일 3)2월8일");
-            switch (scanner.next()){
-                case "0" :
-                    System.out.println("### EXIT ###");return;
+
+        Feb06Service feb06Service = new Feb06ServiceImpl();
+        Feb07Service feb07Service = new Feb07ServiceImpl();
+        Feb08Service feb08Service = new Feb08ServiceImpl();
+        while (true) {
+            System.out.println("[서브메뉴]\n 0)Exit 1)2월6일 2)2월7일 3)2월8일 3)2월9일");
+            switch (scanner.next()) {
+                case "0":
+                    System.out.println("### Exit ###");
+                    return;
                 case "1":
-                    feb06Controller.execute(scanner);break;
+                    String[] oneNames = {"김승현", "김윤섭", "최민서", "한성수", "김태욱",
+                            "Sort", "Stack", "Hash", "Heap", "Greedy",
+                            "Binary Search", "Queue", "Graph", "DFS", "BFS",
+                            "Brute Force", "DP"};
+                    System.out.println("[소메뉴]\n 0.Exit \n1.팀별 과제 \n2.팀장이 맡은 과제 \n3.큐를 담당한 사람\n 4.팀원별 과제 수");
+                    switch (scanner.next()) {
+                        case "0":
+                            System.out.println("Exit");
+                            return;
+                        case "1":
+                            System.out.println("### 팀별 과제 ###");
+                            feb06Service.quiz1(oneNames);
+                            break;
+                        case "2":
+                            System.out.println("### 팀장이 맡은 과제 ###");
+                            feb06Service.quiz2(oneNames);
+                            break;
+                        case "3":
+                            System.out.println("### 큐를 담당한 사람 ###");
+                            feb06Service.quiz3(oneNames);
+                            break;
+                        case "4":
+                            System.out.println("### 팀원별 과제 수 ###");
+                            feb06Service.quiz4(oneNames);
+                            break;
+                        default:
+                            System.out.println("Wrong Number");
+                            break;
+                    }
                 case "2":
-                    feb07Controller.execute(scanner);break;
+                    System.out.println("[소메뉴]\n 0.Exit \n1.주사위 \n2.가위바위보 \n3.소수 구하기\n 4.윤년/평년\n 5.임의숫자 맞추기");
+                    switch (scanner.next()) {
+                        case "0":
+                            System.out.println("### 종료 ###");
+                            return;
+                        case "1":
+                            System.out.println("### 주사위 ###");
+                            feb07Service.getDice(scanner);
+                            break;
+                        case "2":
+                            System.out.println("### 가위바위보 ###");
+                            feb07Service.getRps(scanner);
+                            break;
+                        case "3":
+                            System.out.println("### 소수 구하기 ###");
+                            feb07Service.getPrime(scanner);
+                            break;
+                        case "4":
+                            System.out.println("### 윤년/평년 ###");
+                            feb07Service.getLeapYear(scanner);
+                            break;
+                        case "5":
+                            System.out.println("### 임의숫자 맞추기 ###");
+                            feb07Service.getGuessNumber(scanner);
+                            break;
+                        default:
+                            System.out.println("Wrong Number");
+                            break;
+                    }
+                    break;
                 case "3":
-                    feb08Controller.execute(scanner);break;
-                default:
-                    System.out.println("Wrong Number");break;
+                    System.out.println("[소메뉴]\n 0.Exit \n1.로또 \n2.야구 \n3.좌석예약\n 4.은행 입출금\n 5.구구단");
+                    switch (scanner.next()) {
+                        case "0":
+                            System.out.println("### 종료 ###");
+                            return;
+                        case "1":
+                            System.out.println("### 로또 ###");
+                            feb08Service.lotto(scanner);
+                            break;
+                        case "2":
+                            System.out.println("### 야구 ###");
+                            feb08Service.baseball(scanner);
+                            break;
+                        case "3":
+                            System.out.println("### 좌석예약 ###");
+                            feb08Service.booking(scanner);
+                            break;
+                        case "4":
+                            System.out.println("### 은행 입출금 ###");
+                            feb08Service.bank(scanner);
+                            break;
+                        case "5":
+                            System.out.println("### 구구단 ###");
+                            feb08Service.gugudan(scanner);
+                            break;
+                        default:
+                            System.out.println("Wrong Number");
+                            break;
+                    }
             }
         }
     }
-
 }
