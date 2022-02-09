@@ -47,13 +47,16 @@ public class Feb08ServiceImpl implements Feb08Service {
         while (true){
             System.out.println("출력할 단을 입력하세요 : ");
             int input = scanner.nextInt();
-            if (input<2 || input >9){
+            if (input<2 || input>9){
                 System.out.println("2~9단을 입력해주세요.");
-            }else
+            }else{
                 for (int j = 1; j < 10; j++) {
                     System.out.println(input + "*" + j + "=" + input * j);
+                }
+                break;
             }
         }
+
 
     }
 }

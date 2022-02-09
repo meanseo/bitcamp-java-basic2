@@ -2,6 +2,7 @@ package com.example.demo;
 
 import com.example.demo.algorithm.controller.AlgoController;
 import com.example.demo.auth.controller.MemberController;
+import com.example.demo.oop.controller.OopController;
 import com.example.demo.oop.controller.PhoneController;
 import com.example.demo.quiz.controller.QuizController;
 import org.springframework.boot.SpringApplication;
@@ -15,7 +16,7 @@ public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
         Scanner scanner= new Scanner(System.in);
-        PhoneController phoneController = new PhoneController();
+        OopController oopController = new OopController();
         AlgoController algoController = new AlgoController();
         QuizController quizController = new QuizController();
         MemberController memberController = new MemberController();
@@ -30,7 +31,7 @@ public class DemoApplication {
                     algoController.execute(scanner);break;
                 case "2" :
                     System.out.println("oop");
-                    phoneController.execute(scanner);break;
+                    oopController.execute(scanner);break;
                 case "3":
                     System.out.println("quiz");
                     quizController.execute(scanner);break;

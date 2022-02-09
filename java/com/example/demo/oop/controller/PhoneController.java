@@ -32,16 +32,16 @@ public class PhoneController {
                 case "0" :System.out.println("EXIT"); return;
                 case "1" :
                     System.out.println("집전화");
-                    service.usePhone(scanner); break;
+                    ; break;
                 case "2" :
                     System.out.println("휴대폰");
-                    service.useCelPhone(scanner); break;
+                     break;
                 case "3" :
                     System.out.println("아이폰");
-                    service.useIPhone(scanner); break;
+                     break;
                 case "4" :
                     System.out.println("갤럭시노트");
-                    service.useGalPhone(scanner); break;
+                     break;
                 default: System.out.println("잘못된 메뉴 선택입니다."); break;
             }
         }
