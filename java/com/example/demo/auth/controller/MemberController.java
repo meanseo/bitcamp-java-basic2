@@ -4,7 +4,7 @@ import com.example.demo.auth.domain.BmiDTO;
 import com.example.demo.auth.domain.CalcDTO;
 import com.example.demo.auth.domain.GoogleDTO;
 import com.example.demo.auth.domain.GradeDTO;
-import com.example.demo.auth.domain.LoginDTO;
+import com.example.demo.auth.domain.UserDTO;
 import com.example.demo.auth.service.MemberService;
 import com.example.demo.auth.service.MemberServiceImpl;
 
@@ -24,11 +24,8 @@ import java.util.Scanner;
 
 public class MemberController {
     public void execute(Scanner scanner) {
-        BmiDTO bmi = new BmiDTO();
         CalcDTO calc = new CalcDTO();
         GoogleDTO google = new GoogleDTO();
-        GradeDTO grade = new GradeDTO();
-        LoginDTO login = new LoginDTO();
         MemberService service = new MemberServiceImpl();
 
         while (true){
@@ -42,6 +39,7 @@ public class MemberController {
 
                 case "1": res = "BMI";
                     System.out.println(BmiDTO.TITLE + "\n 이름, 키, 몸무게");
+                    BmiDTO bmi =BmiDTO.getInstance();
                     bmi.setName(scanner.next());
                     bmi.setHei(scanner.nextDouble());
                     bmi.setWei(scanner.nextDouble());
@@ -64,6 +62,7 @@ public class MemberController {
 
                 case "4": res = "GRADE";
                     System.out.println(GradeDTO.GRADE_TITLE + "\n 이름, 국어, 영어, 수학 입력");
+                    GradeDTO grade = GradeDTO.getInstance();
                     grade.setName(scanner.next());
                     grade.setKor(scanner.nextInt());
                     grade.setEng(scanner.nextInt());
@@ -72,11 +71,12 @@ public class MemberController {
                 break;
 
                 case "5": res = "LOGIN";
-                    System.out.println(LoginDTO.LOGIN_TITLE + "\n id, pw, name");
-                    login.setId(scanner.next());
-                    login.setPw(scanner.next());
-                    login.setName(scanner.next());
-                    res = service.getLogin(login);
+                    System.out.println(UserDTO.LOGIN_TITLE + "\n id, pw, name");
+                    UserDTO u = UserDTO.getInstance();
+                    u.setName(scanner.next());
+                    u.setPw(scanner.next());
+                    u.setName(scanner.next());
+                    res = service.getLogin(u);
                 break;
 
                 default: res = "없는 메뉴 입니다.";

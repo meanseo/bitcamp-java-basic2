@@ -36,6 +36,10 @@ public class GradeDTO {
     private int eng;
     private int math;
 
+    private final static GradeDTO gradeDTO = new GradeDTO();
+    private GradeDTO(){};
+    public static GradeDTO getInstance(){return gradeDTO;}
+
     public String getName(){
         return name;
     }

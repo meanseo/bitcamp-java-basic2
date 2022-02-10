@@ -13,8 +13,13 @@ package com.example.demo.auth.domain;
  * 2022-01-26   최민서      switch절 추가
  * 2022-01-26   최민서      3항 연산식 사용
  */
-public class LoginDTO {
+public class UserDTO {
     public static String LOGIN_TITLE = " * Login App * ";
+
+    private final static UserDTO userDTO = new UserDTO();
+    private UserDTO(){}
+    public static UserDTO getInstance(){return userDTO;}
+
     private String id;
     private String pw;
     private String name;

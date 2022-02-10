@@ -1,9 +1,7 @@
-package com.example.demo.oop.domain;
-
-import com.example.demo.auth.domain.CalcDTO;
+package com.example.demo.oop2.domain;
 
 /**
- * packageName: com.example.demo.oop.domain
+ * packageName: com.example.demo.oop2.domain
  * fileName   : IPhone
  * author     : 최민서
  * date       : 2022-02-09
@@ -13,13 +11,9 @@ import com.example.demo.auth.domain.CalcDTO;
  * ================================
  * 2022-02-09     최민서        최초 생성
  */
-public class IPhone extends CelPhone {
-    public final static String KIND = "아이폰";
+public class IPhone extends CelPhone{
+    public final String KIND = "휴대폰";
     protected String search;
-
-    public IPhone(String company){
-        super(KIND,company,"이동중");
-    }
 
     public String getSearch() {
         return search;
@@ -31,6 +25,7 @@ public class IPhone extends CelPhone {
 
     @Override
     public String toString() {
-        return String.format("%s에서 만든 %s을 사용해서 %s중에 %s를 검색한다.",super.getCompany(),KIND,super.getMove(),search);
+        return String.format("%s에서 만든 %s을 사용해서 %s중에 %s를 검색한다."
+                ,super.getCompany(),KIND,search);
     }
 }

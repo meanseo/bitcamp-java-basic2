@@ -14,6 +14,7 @@ import com.example.demo.auth.domain.*;
  * 2022-02-07     최민서        최초 생성
  */
 public class MemberServiceImpl implements MemberService {
+
     /**
      * BMI = w / t * t
      *고도 비만 : 35 이상
@@ -82,8 +83,8 @@ public class MemberServiceImpl implements MemberService {
     }
 
     @Override
-    public String getLogin(LoginDTO login) {
-        return (login.getPw().equals(LoginDTO.PASSWORD)) ? String.format(" %s 님의 비번 %s가 맞습니다. 로그인 성공",login.getId(), login.getPw())
+    public String getLogin(UserDTO login) {
+        return (login.getPw().equals(UserDTO.PASSWORD)) ? String.format(" %s 님의 비번 %s가 맞습니다. 로그인 성공",login.getId(), login.getPw())
                 : String.format(" %s 님의 ID는 맞고 비번 %s가 틀립니다. 로그인 실패", login.getId(), login.getPw());
     }
 }

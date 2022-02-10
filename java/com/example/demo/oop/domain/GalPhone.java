@@ -29,6 +29,7 @@ public class GalPhone extends IPhone{
 
     @Override
     public String toString() {
-        return String.format("%s에서 만든 %S 제품을 사용해서 %s로 결제한다.",super.getCompany(),KIND,pay);
+        return String.format("%s에서 만든 %S 제품을 사용해서 %s로 결제한다.",
+                super.getCompany(),KIND,pay);
     }
 }

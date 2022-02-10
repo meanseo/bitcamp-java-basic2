@@ -3,7 +3,6 @@ package com.example.demo;
 import com.example.demo.algorithm.controller.AlgoController;
 import com.example.demo.auth.controller.MemberController;
 import com.example.demo.oop.controller.OopController;
-import com.example.demo.oop.controller.PhoneController;
 import com.example.demo.quiz.controller.QuizController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
